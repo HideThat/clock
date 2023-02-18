@@ -6,31 +6,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script> <!-- 광고 스크립트 -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="./showTime.js"></script>
     <title>Clock</title>
-    <script>
-        function showTime() {
-          var date = new Date(); // 현재 날짜와 시간을 가져옵니다.
-          var hours = date.getHours();
-          var minutes = date.getMinutes();
-          var seconds = date.getSeconds();
-          var ampm = hours < 12 ? "AM" : "PM"; // 오전/오후 구분
-          hours = hours % 12; // 12시간 형식으로 변경
-          hours = hours ? hours : 12; // 0시를 12시로 변경
-          minutes = minutes < 10 ? "0" + minutes : minutes;
-          seconds = seconds < 10 ? "0" + seconds : seconds;
-          var time = hours + ":" + minutes + ":" + seconds + " " + ampm;
-          document.getElementById("clock").innerHTML = time; // 시계에 현재 시간을 표시합니다.
-          setTimeout(showTime, 1000); // 1초마다 시간을 업데이트합니다.
-        }
-      </script>
 </head>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8030406224319763"
      crossorigin="anonymous">
     </script>
 <body onload="showTime()">
     <div id="current_date">
-        <h1>현재 시간:</h1>
+        <h1 id="title_pont1">NOW</h1>
         <div id="clock"></div> <!-- 시계를 표시할 div 요소입니다. -->
+        <div>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8030406224319763"
+     crossorigin="anonymous"></script>
+<!-- test -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8030406224319763"
+     data-ad-slot="1097852844"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        </div> <!-- 광고 스크립트 -->
+        <div>
+            <amp-ad width="100vw" height="320"
+     type="adsense"
+     data-ad-client="ca-pub-8030406224319763"
+     data-ad-slot="1097852844"
+     data-auto-format="rspv"
+     data-full-width="">
+  <div overflow=""></div>
+</amp-ad>
+        </div> <!-- 광고 스크립트 -->
     </div>
 </body>
 </html>
